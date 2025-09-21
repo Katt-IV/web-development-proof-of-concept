@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mutah Airlines</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px; /* Adjusted the height */
+    background: #0070ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 80px; /* Reduced the height */
+    width: 80px;  /* Reduced the width */
+}
+
+nav {
+    float: right;
+    line-height: 80px; /* Same as header height */
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0px;
+    font-size: 20px;
+    color: #ffff;
+    padding: 28px 5px;
+    margin: 0 1px;
+}
+
+nav a:hover {
+    background: #0004ff;
+    color:#ffff;
+    cursor: pointer; /* Add pointer for hover */
+}
+
+.navbtn {
+    background-color: #0070ff;
+    color: #ffff;
+    border-color: #ffff;
+    height: 80px;
+    width: auto;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-width: 0px;
+    cursor: pointer; /* Add pointer for hover */
+}
+
+.navbtn:hover {
+    background-color: #0004ff; /* Change background on hover */
+    color:#ffff;
+}
+
+.img {
+    width: 20%;
+    height: 20%;
+}
+
+.fa {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 10px;
+margin-top: 100px; /* Pushes content below the header */
+}
+
+.fa img {
+height: 600px;
+width: 40%; /* Adjust width as necessary */
+margin-right: 20px; /* Space between image and text */
+object-fit: cover; /* Ensures the image fits well */
+}
+
+.aboutus {
+text-align: left;
+width: 60%; /* Set width for the text content */
+display: flex;
+flex-direction: column;
+justify-content: center; /* Align text vertically */
+}
+
+h2 {
+margin-bottom: 10px;
+}
+
+p {
+margin-bottom: 20px;
+}
+
+.dark-mode {
+  background-color: #3e3e42;
+  color: #ffff;
+}
+</style>
+</head>
+<body>
+    <div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+             <a href='home.html'><img src='https://i.postimg.cc/LgSR94Xv/pngtree-an-aircraft-is-pictured-on-top-of-a-circular-circle-with-vector-png-image-7054214.png' alt='Airplane logo'/></a>
+            </div>
+            <nav>
+            <a href="home.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="cargo.html">Cargo</a>
+            <a href="aboutus.html">About us</a>
+            <button class="navbtn" onclick="darkfun()">Dark mode</button>
+            </nav>
+        </div>
+    </header>    
+    </div>
+
+    <div class="fa">
+        <img src='https://i.postimg.cc/ncJQYfLX/aboutus.png' alt='flight attendant'/>
+        <div class="aboutus">
+            <h2>Our Mission</h2>
+            <p strong>At Mutah Airlines, our mission is to connect people, cultures, and experiences through safe, reliable, and exceptional air travel services. We are committed to providing our passengers with a seamless journey that exceeds their expectations, while prioritizing safety, comfort, and sustainability in all our operations.</p>
+
+            <h2>Our History</h2>
+            <p strong>Founded in 1995, Mutah Airlines has a rich history of innovation and excellence in the aviation industry. What began as a small regional carrier has grown into a leading international airline, serving destinations across the globe. Over the years, we have earned a reputation for our commitment to customer satisfaction, operational efficiency, and continuous improvement.</p>
+            <p strong>Through strategic partnerships, technological advancements, and a dedicated team of aviation professionals, SkyWings Airlines has evolved into a preferred choice for millions of travelers worldwide. Our history is a testament to our passion for aviation, our dedication to quality service, and our relentless pursuit of excellence in everything we do.</p>
+        <h2>Website Design & Front-end Programming:</h2>
+        <h3>Baraa Bader Equnaibi</h3>
+        <h2>Website Design & Back-end Programming:</h2>
+        <h3>Waseem Kamal Al Zoubi <Al-Zoibi></Al-Zoibi></h3>
+        </div>
+    </div>
+    
+    <script>
+function darkfun() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
